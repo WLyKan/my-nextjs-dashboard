@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        '13': 'repeat(13, minmax(0, 1fr))',
+        13: 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
         blue: {
@@ -28,5 +28,5 @@ const config: Config = {
     },
   },
   plugins: [require('@tailwindcss/forms')],
-};
-export default config;
+}
+export default config
