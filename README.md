@@ -3,3 +3,8 @@
 This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+
+## 笔记
+
+目录嵌套的路由结构
+page.tsx 是入口页面，layout.tsx 是当前路由的公共布局
