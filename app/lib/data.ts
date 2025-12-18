@@ -1,6 +1,4 @@
-import process from 'node:process';
-import postgres from 'postgres';
-import {
+import type {
   CustomerField,
   CustomersTableType,
   InvoiceForm,
@@ -8,6 +6,8 @@ import {
   LatestInvoiceRaw,
   Revenue,
 } from './definitions';
+import process from 'node:process';
+import postgres from 'postgres';
 import { formatCurrency } from './utils';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
@@ -22,7 +22,7 @@ export async function fetchRevenue() {
 
     const data = await sql<Revenue[]>`SELECT * FROM revenue`;
 
-    // console.log('Data fetch completed after 3 seconds.');
+    // console.log('Data fetch completed after 3 seconds.', data);
 
     return data;
   } catch (error) {
