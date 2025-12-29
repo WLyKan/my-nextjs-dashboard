@@ -8,6 +8,7 @@ export default antfu({
   typescript: true,
   // 启用React规则
   react: true,
+  nextjs: true,
   // includes: [
   //   'src/**/*.{js,jsx,ts,tsx}',
   // ],
