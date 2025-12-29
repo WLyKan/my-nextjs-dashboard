@@ -1,8 +1,9 @@
 name: Supabase Keep-Alive
+# 闲置一周后，不活跃的免费项目将被暂停。
 
 on:
-  # schedule:
-  #   - cron: '0 3 * * *'
+  schedule:
+    - cron: '0 3 * * SAT'
   workflow_dispatch:
 
 jobs:
